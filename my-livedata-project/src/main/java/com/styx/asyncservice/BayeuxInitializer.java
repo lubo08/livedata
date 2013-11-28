@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.styx.asyncmessage;
+package com.styx.asyncservice;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -78,9 +78,9 @@ public class BayeuxInitializer implements DestructionAwareBeanPostProcessor, Ser
     public BayeuxServer bayeuxServer()
     {
         BayeuxServerImpl bean = new BayeuxServerImpl();
-        bean.setTransports(
-        		new WebSocketTransport(bean), 
-        		new JSONTransport(bean), 
+        bean.setTransports(  
+        		new WebSocketTransport(bean),
+        		new JSONTransport(bean),        		
         		new JSONPTransport(bean));
         return bean;
     }

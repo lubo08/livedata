@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.styx.asyncmessage;
+package com.styx.asyncservice;
 
 import java.util.HashMap;
 import java.util.Map;

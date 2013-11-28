@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div id="body"></div>
+    <div id="body">${msg}</div>
 
 </body>
 </html>
